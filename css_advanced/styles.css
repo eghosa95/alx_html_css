@@ -220,3 +220,73 @@ main section:nth-of-type(3) h2 span {
   font-size: 12px;
   color: #888;
 }
+
+
+
+
+/* Membership Section */
+main section:nth-of-type(4) {
+  background-color: #071629; /* Deep navy blue */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+main section:nth-of-type(4) h2 {
+  font-size: 32px;
+  margin-bottom: 60px;
+  font-weight: 400;
+}
+
+main section:nth-of-type(4) h2 span {
+  color: #C271FF; /* Purple for "Free" */
+  font-weight: bold;
+}
+
+.membership-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.membership-card {
+  width: 200px;
+}
+
+.membership-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.membership-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.membership-card p {
+  font-size: 14px;
+  color: #ffffffb0;
+  line-height: 1.5;
+}
+
+main section:nth-of-type(4) button {
+  margin-top: 20px;
+  background-color: #C271FF;
+  border: none;
+  padding: 14px 28px;
+  font-weight: bold;
+  border-radius: 28px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+main section:nth-of-type(4) button:hover {
+  background-color: #a244e8;
+}
+
