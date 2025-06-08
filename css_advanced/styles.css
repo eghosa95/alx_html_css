@@ -1,4 +1,93 @@
-/* styles.css */
-body {
-  background-color: #f5f5f5;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Apply custom font if added */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+/* Header and Banner Section */
+header {
+  background-image: url('./images/8e8da0b4-bfcb-4ab7-aac8-aabdbed647d5.png'); /* Replace with your actual banner image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  padding: 20px 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+main > section:first-of-type {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+main span {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+main button {
+  margin-top: 20px;
+  background-color: #C271FF;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  border-radius: 24px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+main button:hover {
+  background-color: #a244e8;
+}
+
+/* "Learn from the pros" section */
+main section:nth-of-type(1) h2 {
+  color: #C271FF;
+  font-size: 28px;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+/* Instructors grid styling can follow next */
