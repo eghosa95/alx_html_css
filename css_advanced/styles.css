@@ -1,20 +1,20 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Apply custom font if added */
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: white;
   background-color: #000;
 }
 
-/* Header and Banner Section */
+
 header {
-  background-image: url('./images/8e8da0b4-bfcb-4ab7-aac8-aabdbed647d5.png'); /* Replace with your actual banner image */
+  background-image: url('./images/8e8da0b4-bfcb-4ab7-aac8-aabdbed647d5.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -90,4 +90,49 @@ main section:nth-of-type(1) h2 {
   margin-bottom: 30px;
 }
 
-/* Instructors grid styling can follow next */
+
+
+
+main section:nth-of-type(2) {
+  background-color: #C271FF; 
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+main section:nth-of-type(2) img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+main section:nth-of-type(2) blockquote {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+
+main section:nth-of-type(2) h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+main section:nth-of-type(2) p {
+  font-size: 14px;
+  font-style: italic;
+  color: #f5f5f5;
+  text-align: left;
+}
+
