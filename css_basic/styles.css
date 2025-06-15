@@ -1,38 +1,79 @@
-
-/* Flex container for entire page layout */
+/* Existing Flexbox layout rules remain */
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Ensures body stretches to full height */
+    height: 100vh;
     margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fdfdfd;
 }
 
-/* Flex container for main content */
 main {
     display: flex;
     flex-direction: row;
-    flex: auto; /* Allows main to take available space */
+    flex: auto;
 }
 
-/* Article takes 2/3 width */
+/* Flex ratios */
 article {
     flex: 2;
-    overflow-y: auto; /* Allows scrolling */
+    overflow-y: auto;
+    background-color: #fffbe6;
     padding: 20px;
-    box-sizing: border-box;
+    border-left: 4px solid #f0c000;
+    font-size: 16px;
+    line-height: 1.6;
+    box-shadow: inset 0 0 5px #ddd;
 }
 
-/* Aside takes 1/3 width */
 aside {
     flex: 1;
-    overflow-y: auto; /* Allows scrolling */
+    overflow-y: auto;
+    background-color: #f0f0f0;
     padding: 20px;
-    box-sizing: border-box;
 }
 
-/* Optional styling for header and footer */
+/* Header and Footer */
 header, footer {
-    background-color: #f0f0f0;
-    padding: 15px;
+    background-color: #007bff;
+    color: white;
     text-align: center;
+    padding: 15px;
+}
+
+footer {
+    font-size: 14px;
+}
+
+/* Logo styling (predefined class) */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+/* Header nav list */
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    gap: 15px;
+    margin: 0;
+}
+
+header li {
+    padding: 5px 10px;
+}
+
+/* Link styles in aside */
+aside a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
 }
